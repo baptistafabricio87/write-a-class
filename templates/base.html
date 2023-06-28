@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+{% load admin_urls %}
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta property="og:image" content="{% static 'img/logo.png' %}">
+    <title>Home - WaC</title>
+    <link rel="icon" type="image/png" sizes="800x800" href="{% static 'img/logo.png' %}">
+    <link rel="icon" type="image/png" sizes="800x800" href="{% static 'img/logo.png' %}">
+    <link rel="icon" type="image/png" sizes="800x800" href="{% static 'img/logo.png' %}">
+    <link rel="icon" type="image/png" sizes="800x800" href="{% static 'img/logo.png' %}">
+    <link rel="icon" type="image/png" sizes="800x800" href="{% static 'img/logo.png' %}">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/FontAwesome.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bs-theme-overrides.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Buttons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Forms.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Profile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Register.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Sidebar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Accordion.css' %}">
+    <link rel="stylesheet" href="{% static 'css/TeamMember.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Team.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Testimonials-images.css' %}">
+</head>
+
+<body style="font-family: Poppins, sans-serif;">
+<div class="overlay"></div>
+<!-- NavBar -->
+{% if user.is_authenticated %}
+    {% include 'partials/auth_navbar.html' %}
+{% else %}
+    {% include 'partials/navbar.html' %}
+{% endif %}
+
+<!-- Content -->
+{% block content %} {% endblock content %}
+
+<!-- Footer -->
+{% include 'partials/footer.html' %}
+
+<script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/suneditor@2.45.0/src/lang/pt_br.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="{% static 'js/Suneditor-WYSIWYG.js' %}"></script>
+<script src="{% static 'js/bold-and-dark.js' %}"></script>
+<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/Sidebar.js' %}"></script>
+<script src="{% static 'js/navegaNav.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+{% load static %}
+<!-- NavBar -->
+<nav class="navbar navbar-dark navbar-expand-md sticky-top text-center py-3" id="mainNav"
+     style="--bs-dark: #090716;--bs-dark-rgb: 9,7,22;--bs-body-bg: #090716;background: var(--bs-dark);">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="{% url 'home' %}">
+            <span>
+                <img src="{% static 'img/logo2.png' %}" height="50vh">
+            </span>
+        </a>
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+            <span class="visually-hidden">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navcol-1">
+            <ul class="navbar-nav text-center me-auto">
+                <li class="nav-item"><a class="nav-link text-center" href="{% url 'home' %}">Home</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="{% url 'sobre' %}">Sobre Nós</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="{% url 'list-lesson' %}">Aulas</a></li>
+                <li class="nav-item"><a class="nav-link text-center" href="{% url 'contato' %}">Contato</a></li>
+                <li class="nav-item"></li>
+            </ul>
+            <ul>
+                <a class="btn btn-warning shadow" role="button" href="{% url 'login' %}"
+                   style="color: var(--bs-dark);background: var(--bs-yellow);">
+                    Acessar
+                </a>
+                <a class="btn btn-warning shadow" role="button" href="{% url 'signup' %}"
+                   style="color: var(--bs-dark);background: var(--bs-yellow);">
+                    Registre-se
+                </a>
+            </ul>
+        </div>
+    </div>
+</nav>

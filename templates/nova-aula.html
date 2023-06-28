@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+    <section class="py-5">
+        <div class="col-md-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-6">Nova Aula</h1>
+                        <form action="{% url 'nova-aula' %}" method="POST">
+                            <label class="form-label">Nome da Aula</label>
+                            <input class="form-control" name="titulo" type="text"
+                                   placeholder="Escreva um título que defina bem a aula.">
+                            <label class="form-label">Autor</label>
+                            <input class="form-control" name="autor" type="text" placeholder="Fabio Carvalho">
+                            <label class="form-label">Categoria</label>
+                            <select class="form-select" name="categoria">
+                                <optgroup label="Tecnologia">
+                                    <option value="front" selected="">Front-end</option>
+                                    <option value="back">Back-end</option>
+                                    <option value="ux">UI/UX Design</option>
+                                    <option value="outros">Outros</option>
+                                </optgroup>
+                                <optgroup label="Dia a Dia">
+                                    <option value="culinaria">Culinária</option>
+                                    <option value="math">Matemática</option>
+                                    <option value="biologia">Biologia</option>
+                                </optgroup>
+                            </select>
+                            <label class="form-label">Conteúdo</label>
+                            <div id="toolbar_container" class="sun-editor"></div>
+                            <textarea class="form-control" id="editor" name="conteudo"
+                                      placeholder="Insert placeholder text in sunEditorInit.js"></textarea>
+                            <button class="btn btn-warning" type="button" style="margin-top: 20px;">Enviar Aula</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            {% include "partials/sidebar.html" %}
+        </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,302 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <header class="bg-dark"
+            style="background: var(--bs-dark);--bs-dark: #090716;--bs-dark-rgb: 9,7,22;--bs-body-bg: #090716;">
+        <div class="container col-xxl-8 px-4 py-3">
+            <div class="row g-0 flex-lg-row-reverse align-items-center g-5 py-5"
+                 style="--bs-dark: #090716;--bs-dark-rgb: 9,7,22;">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img class="img-fluid d-block mx-lg-auto"
+                         src="{% static 'img/Formula-pana.svg' %}"
+                         width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3"><strong>Plataforma de Conteúdo e Ensino
+                        Compartilhado</strong>
+                    </h1>
+                    <h1 class="text-warning"><span style="color: var(--yellow-basic);">Comece agora, Aluno</span></h1>
+                    <p class="lead">Acesse os conteúdos educacionais que mais te interessem e receba as notificações dos
+                        criadores de conteúdos que mais te agradam. Aprenda sem interrupções em uma plataforma simples e
+                        gratuita.<br><br></p>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 py-xl-5">
+            <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body p-4"
+                             style="min-height: 230px;background-color: #2d2c38;border-radius: 8px;">
+                            <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon"
+                                 style="border-color: var(--bs-warning);background: var(--bs-yellow);">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em"
+                                     fill="currentColor" style="color: var(--bs-body-bg);">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="card-title">Escolha seus interesses</h4>
+                            <p class="card-text">Escolha exatamente o que você quer estudar, filtrando seus resultados
+                                baseado no seu interesse.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body p-4"
+                             style="min-height: 230px;background-color: #2d2c38;border-radius: 8px;">
+                            <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon"
+                                 style="background: var(--bs-yellow);">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em"
+                                     fill="currentColor" style="color: var(--bs-body-bg);">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512zM232 256C232 264 236 271.5 242.7 275.1L338.7 339.1C349.7 347.3 364.6 344.3 371.1 333.3C379.3 322.3 376.3 307.4 365.3 300L280 243.2V120C280 106.7 269.3 96 255.1 96C242.7 96 231.1 106.7 231.1 120L232 256z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="card-title">Estude no seu tempo</h4>
+                            <p class="card-text">Acesse o conteúdo quando e onde quiser. Retornar para a sua aula é
+                                fácil
+                                acessando seu histórico.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <div class="card-body p-4"
+                             style="min-height: 230px;background-color: #2d2c38;border-radius: 8px;">
+                            <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center d-inline-block mb-3 bs-icon"
+                                 style="background: var(--bs-yellow);">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em"
+                                     fill="currentColor" style="color: var(--bs-body-bg);">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M572.1 82.38C569.5 71.59 559.8 64 548.7 64h-100.8c.2422-12.45 .1078-23.7-.1559-33.02C447.3 13.63 433.2 0 415.8 0H160.2C142.8 0 128.7 13.63 128.2 30.98C127.1 40.3 127.8 51.55 128.1 64H27.26C16.16 64 6.537 71.59 3.912 82.38C3.1 85.78-15.71 167.2 37.07 245.9c37.44 55.82 100.6 95.03 187.5 117.4c18.7 4.805 31.41 22.06 31.41 41.37C256 428.5 236.5 448 212.6 448H208c-26.51 0-47.99 21.49-47.99 48c0 8.836 7.163 16 15.1 16h223.1c8.836 0 15.1-7.164 15.1-16c0-26.51-21.48-48-47.99-48h-4.644c-23.86 0-43.36-19.5-43.36-43.35c0-19.31 12.71-36.57 31.41-41.37c86.96-22.34 150.1-61.55 187.5-117.4C591.7 167.2 572.9 85.78 572.1 82.38zM77.41 219.8C49.47 178.6 47.01 135.7 48.38 112h80.39c5.359 59.62 20.35 131.1 57.67 189.1C137.4 281.6 100.9 254.4 77.41 219.8zM498.6 219.8c-23.44 34.6-59.94 61.75-109 81.22C426.9 243.1 441.9 171.6 447.2 112h80.39C528.1 135.7 526.5 178.7 498.6 219.8z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="card-title">Mostre o que sabe</h4>
+                            <p class="card-text">Compartilhe com os outros o conhecimento que você adquiriu e mostre sua
+                                progressão na área.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center mb-4" style="font-size: 1.6rem;">Mais de&nbsp;<span
+                            class="text-warning"><strong>50 áreas</strong></span>&nbsp;de
+                        estudo para você focar.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h2 class="fw-bold text-center">UX Design</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="fw-bold text-center">Culinária</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="fw-bold text-center">Matemática</h2>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="fw-bold text-center">e muito mais...</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container bg-dark py-5"
+             style="background: var(--bs-dark);--bs-dark: #090716;--bs-dark-rgb: 9,7,22;border-radius: 25px;">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-warning mb-2"
+                       style="border-color: var(--bs-yellow);color: var(--bs-yellow);">
+                        Vantagens de estudar on-line</p>
+                    <h3 class="fw-bold">O que fala a grande mídia</h3>
+                </div>
+            </div>
+            <div class="py-5 p-lg-5">
+                <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+                    <div class="col mb-5">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5"
+                                 style="max-height: 300px;min-height: 300px;background-color: #2d2c38;border-radius: 8px;">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
+                                     style="top: 1rem;right: 1rem;position: absolute;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em"
+                                         height="1em"
+                                         fill="currentColor" class="text-warning">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M480 32H128C110.3 32 96 46.33 96 64v336C96 408.8 88.84 416 80 416S64 408.8 64 400V96H32C14.33 96 0 110.3 0 128v288c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V64C512 46.33 497.7 32 480 32zM272 416h-96C167.2 416 160 408.8 160 400C160 391.2 167.2 384 176 384h96c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 320h-96C167.2 320 160 312.8 160 304C160 295.2 167.2 288 176 288h96C280.8 288 288 295.2 288 304C288 312.8 280.8 320 272 320zM432 416h-96c-8.836 0-16-7.164-16-16c0-8.838 7.164-16 16-16h96c8.836 0 16 7.162 16 16C448 408.8 440.8 416 432 416zM432 320h-96C327.2 320 320 312.8 320 304C320 295.2 327.2 288 336 288h96C440.8 288 448 295.2 448 304C448 312.8 440.8 320 432 320zM448 208C448 216.8 440.8 224 432 224h-256C167.2 224 160 216.8 160 208v-96C160 103.2 167.2 96 176 96h256C440.8 96 448 103.2 448 112V208z"></path>
+                                    </svg>
+                                </div>
+                                <h5 class="fw-bold card-title">A popularização dos cursos online</h5>
+                                <p class="text-muted card-text mb-4">Com a mesma validade e muito bem aceitos no mercado
+                                    de
+                                    trabalho o método EAD pode ser uma opção.</p><a
+                                    href="https://www.folhape.com.br/colunistas/blogdosconcursos/a-popularizacao-dos-cursos-online/29650/"
+                                    target="_blank">
+                                <button class="btn btn-warning shadow" type="button">Veja mais</button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5"
+                                 style="min-height: 300px;background-color: #2d2c38;border-radius: 8px;">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
+                                     style="top: 1rem;right: 1rem;position: absolute;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em"
+                                         height="1em"
+                                         fill="currentColor" class="text-warning">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M480 32H128C110.3 32 96 46.33 96 64v336C96 408.8 88.84 416 80 416S64 408.8 64 400V96H32C14.33 96 0 110.3 0 128v288c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V64C512 46.33 497.7 32 480 32zM272 416h-96C167.2 416 160 408.8 160 400C160 391.2 167.2 384 176 384h96c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 320h-96C167.2 320 160 312.8 160 304C160 295.2 167.2 288 176 288h96C280.8 288 288 295.2 288 304C288 312.8 280.8 320 272 320zM432 416h-96c-8.836 0-16-7.164-16-16c0-8.838 7.164-16 16-16h96c8.836 0 16 7.162 16 16C448 408.8 440.8 416 432 416zM432 320h-96C327.2 320 320 312.8 320 304C320 295.2 327.2 288 336 288h96C440.8 288 448 295.2 448 304C448 312.8 440.8 320 432 320zM448 208C448 216.8 440.8 224 432 224h-256C167.2 224 160 216.8 160 208v-96C160 103.2 167.2 96 176 96h256C440.8 96 448 103.2 448 112V208z"></path>
+                                    </svg>
+                                </div>
+                                <h5 class="fw-bold card-title" style="width: 300px;">Fim do preconceito com cursos a
+                                    distância</h5>
+                                <p class="text-muted card-text mb-4" style="padding-bottom: 22px;">‘Não há mais
+                                    preconceito
+                                    com cursos a distância’, diz CEO da Cogna.</p><a
+                                    href="https://mercadoeconsumo.com.br/02/01/2023/economia/nao-ha-mais-preconceito-com-cursos-a-distancia-diz-ceo-da-cogna/?cn-reloaded=1">
+                                <button class="btn btn-warning shadow" type="button">Veja mais</button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5"
+                                 style="min-height: 300px;max-height: 300px;background-color: #2d2c38;border-radius: 8px;">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
+                                     style="top: 1rem;right: 1rem;position: absolute;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em"
+                                         height="1em"
+                                         fill="currentColor" class="text-warning">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M480 32H128C110.3 32 96 46.33 96 64v336C96 408.8 88.84 416 80 416S64 408.8 64 400V96H32C14.33 96 0 110.3 0 128v288c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V64C512 46.33 497.7 32 480 32zM272 416h-96C167.2 416 160 408.8 160 400C160 391.2 167.2 384 176 384h96c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 320h-96C167.2 320 160 312.8 160 304C160 295.2 167.2 288 176 288h96C280.8 288 288 295.2 288 304C288 312.8 280.8 320 272 320zM432 416h-96c-8.836 0-16-7.164-16-16c0-8.838 7.164-16 16-16h96c8.836 0 16 7.162 16 16C448 408.8 440.8 416 432 416zM432 320h-96C327.2 320 320 312.8 320 304C320 295.2 327.2 288 336 288h96C440.8 288 448 295.2 448 304C448 312.8 440.8 320 432 320zM448 208C448 216.8 440.8 224 432 224h-256C167.2 224 160 216.8 160 208v-96C160 103.2 167.2 96 176 96h256C440.8 96 448 103.2 448 112V208z"></path>
+                                    </svg>
+                                </div>
+                                <h5 class="fw-bold card-title">Matéria 3</h5>
+                                <p class="text-muted card-text mb-4">Erat netus est hendrerit, nullam et quis ad cras
+                                    porttitor iaculis. Bibendum vulputate cras aenean.</p><a
+                                    href="https://www.folhape.com.br/colunistas/blogdosconcursos/a-popularizacao-dos-cursos-online/29650/">
+                                <button class="btn btn-warning shadow" type="button">Veja mais</button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5"
+                                 style="min-height: 300px;max-height: 300px;background-color: #2d2c38;border-radius: 8px;">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
+                                     style="top: 1rem;right: 1rem;position: absolute;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em"
+                                         height="1em"
+                                         fill="currentColor" class="text-warning">
+                                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                        <path d="M480 32H128C110.3 32 96 46.33 96 64v336C96 408.8 88.84 416 80 416S64 408.8 64 400V96H32C14.33 96 0 110.3 0 128v288c0 35.35 28.65 64 64 64h384c35.35 0 64-28.65 64-64V64C512 46.33 497.7 32 480 32zM272 416h-96C167.2 416 160 408.8 160 400C160 391.2 167.2 384 176 384h96c8.836 0 16 7.162 16 16C288 408.8 280.8 416 272 416zM272 320h-96C167.2 320 160 312.8 160 304C160 295.2 167.2 288 176 288h96C280.8 288 288 295.2 288 304C288 312.8 280.8 320 272 320zM432 416h-96c-8.836 0-16-7.164-16-16c0-8.838 7.164-16 16-16h96c8.836 0 16 7.162 16 16C448 408.8 440.8 416 432 416zM432 320h-96C327.2 320 320 312.8 320 304C320 295.2 327.2 288 336 288h96C440.8 288 448 295.2 448 304C448 312.8 440.8 320 432 320zM448 208C448 216.8 440.8 224 432 224h-256C167.2 224 160 216.8 160 208v-96C160 103.2 167.2 96 176 96h256C440.8 96 448 103.2 448 112V208z"></path>
+                                    </svg>
+                                </div>
+                                <h5 class="fw-bold card-title">Matéria 4</h5>
+                                <p class="text-muted card-text mb-4">Erat netus est hendrerit, nullam et quis ad cras
+                                    porttitor iaculis. Bibendum vulputate cras aenean.</p><a
+                                    href="https://www.folhape.com.br/colunistas/blogdosconcursos/a-popularizacao-dos-cursos-online/29650/">
+                                <button class="btn btn-warning shadow" type="button">Veja mais</button>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-warning mb-2">Fale Conosco</p>
+                    <h2 class="fw-bold">Queremos a sua opinião</h2>
+                </div>
+            </div>
+            <div class="row gx-0 gy-0 d-flex justify-content-center">
+                <div class="col-md-6 col-xl-4">
+                    <div>
+                        <form class="p-3 p-xl-4" method="post">
+                            <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name"
+                                                     placeholder="Nome"></div>
+                            <div class="mb-3"><input class="form-control" type="email" id="email-1" name="email"
+                                                     placeholder="E-mail"></div>
+                            <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6"
+                                                        placeholder="Mensagem"></textarea></div>
+                            <div>
+                                <button class="btn btn-warning shadow d-block w-100" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start">
+                    <div class="d-flex flex-wrap flex-md-column justify-content-md-start align-items-md-start h-100">
+                        <div class="d-flex align-items-center p-3">
+                            <div class="bs-icon-md bs-icon-circle bs-icon-primary text-dark shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"
+                                 style="--bs-primary: #ffc107;--bs-primary-rgb: 255,193,7;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em"
+                                     fill="currentColor" class="text-dark"
+                                     style="--bs-dark: #090716;--bs-dark-rgb: 9,7,22;">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M511.2 387l-23.25 100.8c-3.266 14.25-15.79 24.22-30.46 24.22C205.2 512 0 306.8 0 54.5c0-14.66 9.969-27.2 24.22-30.45l100.8-23.25C139.7-2.602 154.7 5.018 160.8 18.92l46.52 108.5c5.438 12.78 1.77 27.67-8.98 36.45L144.5 207.1c33.98 69.22 90.26 125.5 159.5 159.5l44.08-53.8c8.688-10.78 23.69-14.51 36.47-8.975l108.5 46.51C506.1 357.2 514.6 372.4 511.2 387z"></path>
+                                </svg>
+                            </div>
+                            <div class="px-2">
+                                <h6 class="fw-bold mb-0">Telefone</h6>
+                                <p class="text-muted mb-0">+55 (13) 98208-1352</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"
+                                 style="--bs-primary: #ffc107;--bs-primary-rgb: 255,193,7;">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em"
+                                     fill="currentColor" class="text-dark"
+                                     style="--bs-dark: #090716;--bs-dark-rgb: 9,7,22;">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M464 64C490.5 64 512 85.49 512 112C512 127.1 504.9 141.3 492.8 150.4L275.2 313.6C263.8 322.1 248.2 322.1 236.8 313.6L19.2 150.4C7.113 141.3 0 127.1 0 112C0 85.49 21.49 64 48 64H464zM217.6 339.2C240.4 356.3 271.6 356.3 294.4 339.2L512 176V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V176L217.6 339.2z"></path>
+                                </svg>
+                            </div>
+                            <div class="px-2">
+                                <h6 class="fw-bold mb-0">Email</h6>
+                                <p class="text-muted mb-0">contato@writeaclass.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section style="padding-bottom: 50px;">
+        <div class="container">
+            <div class="bg-dark border rounded border-dark d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5"
+                 style="--bs-dark: #090716;--bs-dark-rgb: 9,7,22;">
+                <div class="text-center text-lg-start py-3 py-lg-1">
+                    <h2 class="fw-bold mb-2">Receba nossas novidades</h2>
+                    <p class="mb-0" style="max-width: 500px;">Acompanhe as melhorias da plataforma e as promoções
+                        exclusivas
+                        que disponibilizamos via e-mail</p>
+                </div>
+                <form class="d-flex justify-content-center flex-wrap flex-lg-nowrap" method="post">
+                    <div class="my-2"><input class="border rounded-pill shadow-sm form-control" type="email"
+                                             name="email"
+                                             placeholder="Seu E-mail"></div>
+                    <div class="my-2">
+                        <button class="btn btn-warning shadow ms-2" type="submit">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}

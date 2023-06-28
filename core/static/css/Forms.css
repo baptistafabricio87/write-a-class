@@ -1,0 +1,84 @@
+.form-control, .form-select {
+  background-color: rgba(255,255,255,0.08)!important;
+  border: 0px;
+  color: rgba(255,255,255,1)!important;
+  border-radius: 8px!important;
+}
+
+optgroup {
+  color: #001634!important;
+}
+
+.form-control:hover, .form-select:hover {
+  background-color: rgba(255,255,255,0.1)!important;
+}
+
+.form-control::placeholder {
+  color: rgba(255,255,255,0.8)!important;
+}
+
+.form-label {
+  padding-top: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.sized {
+  padding: 2px!important;
+}
+
+.sized::placeholder {
+  padding-left: 10px;
+}
+
+.commente {
+  background-color: rgba(255,255,255,0.5)!important;
+}
+
+.comments {
+  background-color: rgba(255,255,255,0.08)!important;
+}
+
+.comments:hover {
+  background-color: rgba(255,255,255,0.1)!important;
+}
+
+.paginas li {
+  background-color: #fec701;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: #090716;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.paginas li:hover {
+  background-color: #ffd84c;
+  cursor: pointer;
+}
+
+.dash tr {
+  border-bottom: rgba(255,255,255,0.03);
+}
+
+.dash tr td {
+  text-align: center;
+  padding: 0px!important;
+  vertical-align: middle;
+}
+
+.activeNav {
+  background-color: #fec701!important;
+  border-radius: 20px;
+  color: #090716!important;
+}
+
+.activeNav:hover {
+  color: #090716!important;
+}
+
+.navbar-nav {
+  margin-left: 40px;
+}
+

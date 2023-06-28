@@ -1,0 +1,19 @@
+.shadow {
+  box-shadow: 0 .5rem 1rem rgba(255,193,7,0.07) !important;
+}
+
+.nav-link:hover {
+  color: var(--bs-yellow)!important;
+}
+
+.btn-dark {
+  background-color: #090716!important;
+  color: rgba(255,255,255,0.9);
+  font-weight: 400!important;
+}
+
+.btn-dark:hover {
+  background-color: var(--bs-warning)!important;
+  color: #090716!important;
+}
+

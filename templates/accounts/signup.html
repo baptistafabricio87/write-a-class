@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-warning" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    <section class="register-photo" style="background-color: transparent;">
+        <div class="form-container" style="margin-top: 40px;">
+            <div class="image-holder"
+                 style="background: url({% static 'img/IINET-DOSAGE-1.jpg' %}) left / cover no-repeat;">
+            </div>
+            <form method="post" action="{% url 'signup' %}"
+                  style="height: 525px;--bs-dark: #090716;--bs-dark-rgb: 9,7,22;">
+                {% csrf_token %}
+                <h2 class="text-center text-white" style="--bs-dark: #090716;--bs-dark-rgb: 9,7,22;">
+                    <strong>Crie sua conta</strong>
+                </h2>
+                <div class="form-group mb-3">
+                    <input class="form-control" type="text" name="name" placeholder="Nome">
+                </div>
+                <div class="form-group mb-3">
+                    <input class="form-control" type="email" name="email" placeholder="E-mail">
+                </div>
+                <script>
+                    // Submit button made with javascript
+                    function changePassword() {
+                        var password = document.querySelector("#password").value;
+                        var confirmPassword = document.querySelector("#confirmPassword").value;
+
+                        if (password.length >= 8) {
+                            if (password === confirmPassword) {
+                                var btn = $('#submitButton').removeAttr("disabled");
+                                document.querySelector('#passwordsError').style.display = 'none';
+                                console.log("enabling")
+                            } else {
+                                var btn = $('#submitButton').attr("disabled", "true");
+                                document.querySelector('#passwordsError').style.display = 'block';
+                                document.querySelector('#errorMessage').innerHTML = 'The passwords do not match';
+                                console.log("disabling")
+                            }
+                        } else {
+                            var btn = $('#submitButton').attr("disabled", "true");
+                            document.querySelector('#passwordsError').style.display = 'block';
+                            document.querySelector('#errorMessage').innerHTML = 'The password must be at least 8 characters long';
+                            console.log("disabling")
+                        }
+                    }
+                </script>
+                <div class="form-group mb-3">
+                    <input class="form-control" type="password" id="password"
+                           name="password" placeholder="Senha" onchange="changePassword()">
+                </div>
+                <div class="form-group mb-3">
+                    <input class="form-control" type="password" id="confirmPassword"
+                           name="password_confirm" placeholder="Confirme a Senha"
+                           onchange="changePassword()">
+                </div>
+                <div id="passwordsError" style="display: none;margin-bottom: 16.5px;">
+                    <span id="errorMessage" class="text-danger" style="font-size:13px;"></span>
+                </div>
+                <div class="form-group mb-3">
+                    <div class="form-check">
+                        <label class="form-check-label text-white">
+                            <input class="form-check-input" type="checkbox">
+                            Estou de acordo com os Termos de Serviço
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group mb-3">
+                    <button class="btn btn-warning link-dark d-block w-100" id="submitButton" type="submit"
+                            style="color: rgb(255,255,255);--bs-dark: #090716;--bs-dark-rgb: 9,7,22;">Criar Conta
+                    </button>
+                </div>
+                <a class="link-warning already" href="{% url 'login' %}">
+                    Já tem uma conta? Conecte-se aqui
+                </a>
+            </form>
+        </div>
+    </section>
+{% endblock %}
